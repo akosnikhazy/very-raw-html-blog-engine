@@ -15,7 +15,9 @@ Then just upload the whole blog to GitHub. Or wherever you want. It is a good id
 
 ## how to change design?
 You can change the ``index-template.html`` and ``post-template.html`` files as you like, just leave the ``{{tags}}`` where you need content. 
+
 In index-template.html, ```{{list}}``` is where the list of blog posts will appear after templating.
+
 In post-template.html, ```{{path}}``` will have the full path of the blog post, ```{{title}}``` ```{{date}}``` and ```{{text}``` will show the ```h1``` title, containing the folder name and the first ```p``` tag's text in the given post.
 
 ## Jekyll does this but better?
