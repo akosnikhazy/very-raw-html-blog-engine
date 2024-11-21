@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="rss.xml" rel="self" type="application/rss+xml" />
+        <title>Very Raw HTML Blog Engine</title>
+        <link>http://example.com</link>
+        <description>A blog made of HTML</description>
+        <item><guid isPermaLink="false">D38BCFE16030BFB1B13B03C14FBBC631402BDB133122F4513C2BBE94728B1680</guid><title>The minimalist blog post</title><link>http://example.com/posts/2024-11-21/minimalist-entry.html</link><description>This blog post is just a p HTML tag to show, you can do whatever you want. All you need is a h1 for the tile and a p for the text.</description></item><item><guid isPermaLink="false">B26C6D760E35E89880607E3F782B1621CF50606B36983D96F5CDC6B93F4D7A16</guid><title>How it works? - This is an example blog post!</title><link>http://example.com/posts/2024-11-21/raw-html-blog-engine.html</link><description>To make blog posts like this, you need to create a folder named as a date (not you gf but year-month-day or smtg like that) in the posts (by default) folder. You can put as many html files in it as you like.</description></item>
+    </channel>
+</rss>

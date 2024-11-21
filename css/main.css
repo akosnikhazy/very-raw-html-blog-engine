@@ -1,0 +1,130 @@
+
+*{
+    scrollbar-width: thin;
+    box-sizing: border-box;    
+}
+
+:root {
+    --text-color: #F2F2F2;
+    --content-color:#393E46;
+    --nice-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+html{
+    background:#222831;
+    color:var(--text-color);
+    font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+article{
+    max-width: 900px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    padding:10px 30px;
+    background:  var(--content-color);
+    -webkit-border-radius: 4px 4px 4px 4px;
+    font-size: .95rem;
+    text-align: justify;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    line-height: 1.5;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    color: #cf3838;
+    text-decoration: none;
+}
+nav{
+    box-shadow:var(--nice-shadow);
+   
+}
+
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    display:block;
+    margin-left: 20px;
+}
+
+nav a{
+    display:block;
+    height:30px;
+    padding:5px;
+    background:#4a66478e;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+nav ul li a:active{
+
+    box-shadow:var(--nice-shadow)
+}
+
+#postedat{
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+#container{
+   max-width:1000px;
+   display:flex;
+   justify-content: flex-start; 
+   
+  
+}
+
+#posts{
+    box-shadow:var(--nice-shadow);
+    padding: 20px;
+    max-width: 650px;
+}
+
+.post{
+    background: #393E46
+}
+
+.post span{
+    display:block;
+}
+
+.post .posttitle{
+    color:var(--text-color);
+    font-weight:777;
+    font-size:1.1rem;
+
+}
+
+.post .posttime{
+    color:var(--text-color);
+    opacity:0.7;
+    font-size: 0.8rem
+}
+
+.post .postfirstparagraph{
+    color: var(--text-color);
+    padding-left:5px;
+}
+
+.post .postreadmore{
+    width:100%;
+    font-size:0.8rem;
+    text-align:right;
+}
+
+#container h1{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family:monospace;
+    
+}
+
+#blogtitle,nav{
+    align-self: flex-start;
+    position:sticky;
+    top:10px;
+}

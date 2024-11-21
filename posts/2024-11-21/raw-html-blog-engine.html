@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="This new blog is about the development of my games. Now I am working on Cupig's Key Collectathon">
+
+    <title>Very Raw Blog Engine - how to use</title>
+
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="icon" href="../../media/icon/icon.png" />
+  </head>
+
+  <body>
+    <nav>
+        <ul>
+            <li><a href="">Blog Index</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>How it works? - This is an example blog post!</h1>
+
+        <div id="postedat">by Author <time datetime="2024-11-21">2024-11-21</time></div>
+        <p>To make blog posts like this, you need to create a folder named as a date (not you gf but year-month-day or smtg like that) in the posts (by default) folder. You can put as many html files in it as you like.</p>
+        <p>After you have written, edited or deleted a html post, run the build-index.ps1 file in PowerShell. If you do not have permission to run script files, you can copy its contents in PowerShell (make sure you navigate to the blogs folder). The script does three things: It creates the index.html file with the post list. It also creates a sitemap.xml and rss.xml file.</p>
+        <p>The first paragraph will be the text of the post while the h1 tag will be the title in the post list file (index.html). The Read More and Title links will point to the post itself.</p>
+        <p>To change the look of the blog, you should edit the index-template.html file. Just leave the {{list}} marker where the list of posts will be. Same goes for the posts in the list. You can design the actual posts as you like.</p>
+        <p>You can use git, GitHub Desktop, or simply drag and drop your blog content to the GitHub website to publish your blog to GitHub pages.</p>
+    </article>
+    <script src="../../js/brain.js"></script>
+  </body>
+</html>
