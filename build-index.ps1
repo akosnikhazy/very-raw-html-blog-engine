@@ -81,6 +81,7 @@ foreach ($htmlFile in $htmlFiles) {
     $guid =  [BitConverter]::ToString($sha256.ComputeHash([System.Text.Encoding]::UTF8.GetBytes($h1Text + $containingFolder + $relativePath))) -replace '-'
 
     # to do: make RSS post template
+    $pText = $pText -replace '<[^>]*>', ''
     $RSSListContent += '<item><guid isPermaLink="false">' + $guid + '</guid><title>' + $h1Text + '</title><link>' + $domain + '/' + $contentFolderPath + '/' + $relativePath + '</link><description>' + $pText + '</description></item>'
 
     # to do: make sitemap post template
