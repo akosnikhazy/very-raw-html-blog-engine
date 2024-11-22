@@ -7,6 +7,7 @@ This is a very crude way of writing a blog. Since GitHub does not have dynamic s
 This solves the problem of having an index.html, rss.xml and sitemap.xml file with the latest posts in it. These are difficult to update by hand. The PowerShell script is here to help!
 
 ## how to publish blog posts?
+First change the ```$domain``` variable in the ```build-index.ps1``` script, so it puts your domain in the sitemap, rss feed and links.
 While you can change a lot in the ```build-index.ps1``` file, by default you have a ``posts`` folder. In this folder you should create folders named as Y-m-d dates (e.g. 2024-11-30). This will be the publication date of the posts. You create posts by creating HTML files in these date folders. All you need is an h1 tag for the title and at least one p tag for the text. Everything else is optional.The best practice is to create a nice blog post design and every time you want to write a new post, just copy that, fill in the blanks and you are good to go.
 
 When you have finished writing your blog post, you need to run the build-index.ps1 PowerShell script. This will create the index.html, sitemap.xml and rss.xml files for you.
